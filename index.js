@@ -33,7 +33,11 @@ let copyPara = para_2.cloneNode(true)
 let PcopyPara = document.createElement('p')
 PcopyPara.appendChild(copyPara)
 
-function clpara_2(i){
+function clpara_2(){
     para_2.appendChild(PcopyPara)
 }
 
+const rmpara_1 = document.querySelector('.para-1')
+function removepara() {
+    rmpara_1.remove()
+}
